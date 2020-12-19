@@ -1,0 +1,59 @@
+@media (max-width: 1017px){
+
+    #app {
+        width: 100% !important;
+    }
+
+    label{
+        font-size: 30px !important;
+    }
+
+    #flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+
+    }
+
+    #flex-container > div {
+       div, input, select, label {
+           width: 80%;
+           margin: 0 auto;
+       }
+    }
+
+    #function {
+        width: 100% !important;
+        text-align: center;
+
+        button{
+            margin: 12px auto;
+        }
+    }
+
+    #new-cards > div{
+        figure {
+            margin: 12px auto;
+        }
+        
+    }
+
+    .loader {
+        top: 850px !important;
+        right: 40vw !important;
+    }
+}
+
+@media (max-width: 450px) {
+    label{
+        font-size: 25px !important;
+    }
+    button {
+        width: 80vw !important;
+    }
+
+    input, select {
+        width: 250px !important;
+    }
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Travel Planner</title>
+      <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+      <div id = "app">
+        <div id="headline" class ="holder headline">
+          Travel Planner
+        </div>
+
+
+        <div id="flex-container">
+        <div id="function">
+          
+          <div class ="holder city">
+            <label for="city">Enter City here</label>
+            <input type="text" id="city" placeholder="Enter city here">
+
+            <label for="country-list">Choose your country from the list</label>
+            <select id="country-list" name="country">
+              <option value="" disabled selected>Select your option</option>
+            </select>
+          </div>
+          <div class ="holder">
+            <label for="trip-date">Choose Date of Arrival (Within 16 Days)</label>
+            <input id="trip-date" type="date">
+
+            <button id="generate" type = "submit"> Save Entry </button>
+
+    
+          </div>
+
+          <button id="previous-entries" type="button">Show Saved Entries</button>
+  
+
+
+        </div>
+
+        <div id='loader'></div>
+        <div id="fig-container">
+        <figure id="image-holder">
+          <img id="city-image" src="https://cdn.pixabay.com/photo/2016/01/19/15/48/luggage-1149289__480.jpg" alt="travel suitcase">
+        
+          <figcaption>
+
+
+            <div class = "title">Travel Details</div>
+            
+              <div id = "entry-holder">
+                <div id="name"></div>
+                <div id = "date"></div>
+                <div id="mssg"></div>
+                <div id = "temp"></div>
+                <div id = "forecast"></div>
+
+
+              </div>
+
+
+          </figcaption>
+        </figure>
+
+
+        </div>
+
+        <div id="hidden-button-div">
+        <button id="hide-entries" type="button">Hide Saved Entries</button>
+        <div id='bttn-mssg'></div>
+        </div>
+
+
+       
+        <div id="new-cards"></div>
+        </div>
+
+        </div>
+        
+        <script>
+          // Check that service workers are supported
+          if ('serviceWorker' in navigator) {
+              // Use the window load event to keep the page load performant
+              window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/service-worker.js');
+              });
+          }
+        </script>
+
+    </body>
+  </html>
