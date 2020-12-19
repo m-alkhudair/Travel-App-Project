@@ -1,4 +1,6 @@
 # About this App
+This app was built to meet the graduation requirements for the Frontend Web Development nanodegree from Udacity.
+
 This is a Travel Planner that allows the user to save information about the desired destination. This information includes the date of arrival, and the number of days until the travel date and the weather on that date. You can access the previous entries by clicking on the Show Saved Entries button.
 
 # Geoname API
