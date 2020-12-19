@@ -12,6 +12,7 @@ import {hideNewCards} from './js/previousEntries';
 import './styles/mobile.scss';
 import './styles/style.scss';
 
+//Event listeners:
 document.getElementById('generate').addEventListener('click', handleSubmit);
 document.getElementById('previous-entries').addEventListener('click', makeNewCard);
 document.getElementById('hide-entries').addEventListener('click', hideNewCards);
