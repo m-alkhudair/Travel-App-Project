@@ -3,6 +3,12 @@ This app was built to meet the graduation requirements for the Frontend Web Deve
 
 This is a Travel Planner that allows the user to save information about the desired destination. This information includes the date of arrival, and the number of days until the travel date and the weather on that date. You can access the previous entries by clicking on the Show Saved Entries button.
 
+# To Start the App
+In the terminal, enter these commands: 
+- npm install
+- npm run prod
+- npm start
+
 # Geoname API
 This app access the Geomane API to retrieve the longitude and latitude of the inputted city using the getGeoCoocrdinates() function. The object returned by this function includes city data as well as the weather forecast from the WeatherBit API and image data from the Pixabay API. The returned data will be posted to the server and store in an array of objects.
 
