@@ -5,9 +5,9 @@ This is a Travel Planner that allows the user to save information about the desi
 
 # To Start the App
 In the terminal, enter these commands: 
-- npm install
-- npm run prod
-- npm start
+- `npm install`
+- `npm run prod`
+- `npm start`
 
 # Geoname API
 This app access the Geomane API to retrieve the longitude and latitude of the inputted city using the getGeoCoocrdinates() function. The object returned by this function includes city data as well as the weather forecast from the WeatherBit API and image data from the Pixabay API. The returned data will be posted to the server and store in an array of objects.
