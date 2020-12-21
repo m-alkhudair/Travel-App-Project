@@ -26,3 +26,6 @@ Previous entries are available to the user after clicking the Show Saved Entries
 
 # Updating the UI
 All the data used to update the UI are retrieved from the local server. The handleSubmit() function will connect all the moving parts together. It is an event handler function that will call the getGeoCoordinates() function and use .then() channel the data to the postData() function. The latter will post everything to the local server. The request data will then be used to call the updateUI() function to make the change appear on the browser.
+
+# License
+The contents of this repository are covered under the MIT [License](/LICENSE).
